@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/styleindex.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <title>HOME | HERBTIME</title>
     <link rel="icon" href="https://i.imgur.com/eJYEUhc.png" type="image/x-icon">
 
@@ -15,253 +16,164 @@
 
 <body>
     <!-- navbar navbar navbar navbar navbar navbar navbar navbar navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">
-            <img src="https://i.imgur.com/prKxDMe.png" width="150" height="30" class="d-inline-block align-top" alt=""
-                loading="lazy">
-        </a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-alpha fixed-top">
+        <div class="container">
+            <a class=" navbar-brand" href="index.html">
+                <img src="assets/image/logo white copy.png" width="150" height="30" class="d-inline-block align-top"
+                    alt="" loading="lazy">
+            </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">หน้าหลัก<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="aboutme.html">เกี่ยวกับฉัน</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        บทความ
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="blog.html">บทความทั้งหมด</a>
-                        <a class="dropdown-item" href="news.html">ข่าว</a>
-                        <a class="dropdown-item" href="strains.html">สายพันธุ์​ต่างๆ</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">ติดต่อโฆษณา</a>
-                    </div>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto text-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutme.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Blog
+                        </a>
+                        <div class="dropdown-menu bg-alpha" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item text-light" href="news.html">News</a>
+                            <a class="dropdown-item text-light" href="blog.html">Blog</a>
+                            <a class="dropdown-item text-light" href="strains.html">Strains</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <!-- Carousel Carousel  Carousel  Carousel  Carousel  Carousel  Carousel -->
-    <header class="container">
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="image/cover 1.png" class="d-block w-100 img-cover" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-img" style="background-image: url('assets/image/cover 1.png');">
+                    <!-- <img src="assets/image/cover 1.png" class="d-block w-100" alt="..."> -->
+                    <div class="carousel-caption">
+                        <h1 class="display-4 font-weight-bold">HERBTIME</h1>
+                        <p class="lead">สังคมของคนที่สนใจเกี่ยวกับกัญชา</p>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="image/cover 2.png" class="d-block w-100 img-cover" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="image/cover 3.png" class="d-block w-100 img-cover" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="image/cover 4.png" class="d-block w-100 img-cover" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-
-                    </div>
+                    <div class="blackscreen"></div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-        <h1 class="col-12 py-2 font-weight-bold">บทความล่าสุด</h1>
-        <hr>
-    </header>
-
-    <!-- Container card Container card Container card Container card Container card Container card -->
-    <article class="container">
-        <div class="row">
-            <section class="col-12 col-md-4 col-lg-3 col-sm-6">
-                <div class="card mb-4">
-                    <img src="https://scontent.furt2-1.fna.fbcdn.net/v/t1.0-9/133854021_2931392527092876_768761029476466730_n.png?_nc_cat=101&ccb=2&_nc_sid=730e14&_nc_eui2=AeFypF3RiMIS1dJfwo9PhcJtDXEqzxtuyLMNcSrPG27Is2KAaVKQa8a_b-oUwEbNzOVVKG5JCZcM0LMMMq1WggB3&_nc_ohc=8vHqLVYAlWAAX-eHMZw&_nc_ht=scontent.furt2-1.fna&oh=4d770b7f52626caafd7bea281a9f2ad3&oe=60124912"
-                        class="card-img-top" alt="Nate Diaz">
-                    <div class="card-body">
-                        <h5 class="card-title">Nate Diaz นักกีฬา MMA พูดถึงกัญชา</h5>
-                        <p class="card-text">"ผมไม่ได้สนับสนุนให้ทุกคน สูบกัญชา
-                            แต่ในฐานะนักกีฬาผมคิดว่านักกีฬาควรลองกัญชา ถ้าคุณต้องการอะไรซักอย่างมาช่วยเหลือคุณ
-                            ผมว่ามันดีกว่าการใช้สเตอรอยด์ หรือ สารกระตุ้นด้วยซ้ำไป"</p>
-                        <a href="#" class="btn btn-primary">อ่านเพิ่มเติม</a>
+            <div class="carousel-item">
+                <div class="carousel-img" style="background-image: url('assets/image/cover 2.png');">
+                    <div class="carousel-caption">
+                        <h1 class="display-4 font-weight-bold">HERBTIME NEWS</h5>
+                            <p class="lead">ข่าวสารต่างๆเกี่ยวกับกัญชา</p>
                     </div>
+                    <div class="blackscreen"></div>
                 </div>
-            </section>
-            <section class="col-12 col-md-4 col-lg-3 col-sm-6">
-                <div class="card mb-4">
-                    <img src="https://scontent.furt2-1.fna.fbcdn.net/v/t1.0-9/133705670_2930706873828108_4300398926303947243_n.jpg?_nc_cat=111&ccb=2&_nc_sid=730e14&_nc_eui2=AeFI36pI2LRxr04_xMSySZ4Ckp_w_xNnpTmSn_D_E2elOXNXysRFTL8xazCvLCKmaTTL0mvT-roriljstXRmDFEv&_nc_ohc=troeakQS-bgAX-LMwYr&_nc_ht=scontent.furt2-1.fna&oh=a91f38df0c24893e05c243da3f00e860&oe=60112733"
-                        class="card-img-top" alt="Tuthan Khamun">
-                    <div class="card-body">
-                        <h5 class="card-title">ฟาโรห์ ตุตันคาเมน</h5>
-                        <p class="card-text">สวัสดีวันแรกของสัปดาห์ครับสหาย
-                            อีกหนึ่งสายพันธุ์ที่เป็นทีเด็ดและน่าลิ้มลองสุดๆ นั้นก็คือ ฟาโรห์ " ตุตันคาเมน "</p>
-                        <a href="#" class="btn btn-primary">อ่านเพิ่มเติม</a>
-                    </div>
-                </div>
-            </section>
-            <section class="col-12 col-md-4 col-lg-3 col-sm-6">
-                <div class="card mb-4">
-                    <img src="https://scontent.furt2-1.fna.fbcdn.net/v/t1.0-9/131977236_2928344924064303_1071273393811169067_n.jpg?_nc_cat=101&ccb=2&_nc_sid=730e14&_nc_eui2=AeEi1pHbV16eytkbkQTvO2uk_yM9bf4uquL_Iz1t_i6q4gPI4JX0zrtFoLNYqqHLU8-_alVuZrjpWVWBiXTKXF9Q&_nc_ohc=CrzbjUGi5oQAX_YBL04&_nc_ht=scontent.furt2-1.fna&oh=50a8e7ada9de72be00376da8ba2761aa&oe=6010C956"
-                        class="card-img-top" alt="Bruce Banner">
-                    <div class="card-body">
-                        <h5 class="card-title">สายพันธุ์​ bruce banner#3</h5>
-                        <p class="card-text">สวัสดีวันสุดสัปดาห์​ครับสหาย วันนี้มีสายพันธุ์​ bruce banner#3
-                            มาขิงให้อ่่านเล็กๆน้อยๆ
-
-                            เป็นพันธุ์ที่บอกได้ว่าสุดจริงๆ พอเริ่มจูนคลื่นติด หัวนี่โล่งไปเลย Feeling โคตรไหล เพลินมาก
-                            จะดูหนังจะฟังเพลง คืออิน เติมมากไปอาจจะตึบๆขมับได้</p>
-                        <a href="#" class="btn btn-primary">อ่านเพิ่มเติม</a>
-                    </div>
-                </div>
-            </section>
-            <section class="col-12 col-md-4 col-lg-3 col-sm-6">
-                <div class="card mb-4">
-                    <img src="https://scontent.furt2-1.fna.fbcdn.net/v/t1.0-9/131255757_2918123981753064_1618643090308675064_n.jpg?_nc_cat=106&ccb=2&_nc_sid=730e14&_nc_eui2=AeFEk3QV_H3rf2b08i54K0HFB8J2RxuRfwEHwnZHG5F_ARBfaPcTGveQmVPH1P_OrHv42XOvcHvLYpeMvdyPnPLJ&_nc_ohc=YEHFBWNr6LEAX8__nBr&_nc_ht=scontent.furt2-1.fna&oh=770e57ac1eaab25d245e3b02e9a34b52&oe=601361D1"
-                        class="card-img-top" alt="Purplethai ethos">
-                    <div class="card-body">
-                        <h5 class="card-title">สายพันธุ์​ Purplethai ethos</h5>
-                        <p class="card-text">กลิ่นเปรี้ยวๆ หอมๆ ดูดคำแรกนุ่มมากแต่อาการคันคอเริ่มมา ไอขึ้นตา อะเหื้อ
-                            (คิดในใจ เห้ยมันก็เอาเรื่องนะเนี่ย) เปิดเพลงเบสฉ่ำโยกโคตรเข้าฟีล
-                            ถ้าอยู่เฉยๆมันจะอึนๆถึงเหลืองได้ แดกโคตรยับ มีเท่าไหร่ใส่หมด หวานๆนี่ชุ่มคอมาก</p>
-                        <a href="#" class="btn btn-primary">อ่านเพิ่มเติม</a>
-                    </div>
-                </div>
-            </section>
-            <section class="col-12 col-md-4 col-lg-3 col-sm-6">
-                <div class="card mb-4">
-                    <img src="https://scontent.furt2-1.fna.fbcdn.net/v/t1.0-9/131255757_2918123981753064_1618643090308675064_n.jpg?_nc_cat=106&ccb=2&_nc_sid=730e14&_nc_eui2=AeFEk3QV_H3rf2b08i54K0HFB8J2RxuRfwEHwnZHG5F_ARBfaPcTGveQmVPH1P_OrHv42XOvcHvLYpeMvdyPnPLJ&_nc_ohc=YEHFBWNr6LEAX8__nBr&_nc_ht=scontent.furt2-1.fna&oh=770e57ac1eaab25d245e3b02e9a34b52&oe=601361D1"
-                        class="card-img-top" alt="Purplethai ethos">
-                    <div class="card-body">
-                        <h5 class="card-title">สายพันธุ์​ Purplethai ethos</h5>
-                        <p class="card-text">กลิ่นเปรี้ยวๆ หอมๆ ดูดคำแรกนุ่มมากแต่อาการคันคอเริ่มมา ไอขึ้นตา อะเหื้อ
-                            (คิดในใจ เห้ยมันก็เอาเรื่องนะเนี่ย) เปิดเพลงเบสฉ่ำโยกโคตรเข้าฟีล
-                            ถ้าอยู่เฉยๆมันจะอึนๆถึงเหลืองได้ แดกโคตรยับ มีเท่าไหร่ใส่หมด หวานๆนี่ชุ่มคอมาก</p>
-                        <a href="#" class="btn btn-primary">อ่านเพิ่มเติม</a>
-                    </div>
-                </div>
-            </section>
-            <section class="col-12 col-md-4 col-lg-3 col-sm-6">
-                <div class="card mb-4">
-                    <img src="https://scontent.furt2-1.fna.fbcdn.net/v/t1.0-9/129247486_2911434945755301_6506521127520907836_n.png?_nc_cat=101&ccb=2&_nc_sid=730e14&_nc_eui2=AeEpC3Ro5UA8SLSgI1uhveXfaXfcKwc1YWtpd9wrBzVhaxazxhJ_1gdmveNfaufeoIm64Ju8OU_60MkZWre6yiix&_nc_ohc=lB4luMisy-kAX8WQXWH&_nc_ht=scontent.furt2-1.fna&oh=af9a1ca8f46745869ddff71f02046f3c&oe=60108757"
-                        class="card-img-top" alt="กินพันลำ">
-                    <div class="card-body">
-                        <h5 class="card-title">ชายหนุ่มชาวสเปน กินพันลำเพื่อเลี่ยงการโดนจับ</h5>
-                        <p class="card-text">จากข้อมูลของหนังสือพิมพ์ La Verdad เจ้าหน้าที่ตํารวจของเมือง Cieza
-                            ในมูร์เซียประเทศสเปน ได้ทําการลาดตระเวนตรวจสอบความปลอดภัยเป็นประจํา
-                            ทว่าวันนั้นเห็นกลุ่มวัยรุ่นกำลังจับกลุ่ม
-                            เมื่อตำรวจเห็นกลุ่มคนหนุ่มสาวที่สูบบุหรี่บนถนนสาธารณะ</p>
-                        <a href="#" class="btn btn-primary">อ่านเพิ่มเติม</a>
-                    </div>
-                </div>
-            </section>
-
-
-        </div>
-        <!-- Page footer nav Page footer nav Page footer nav Page footer nav Page footer nav Page footer nav -->
-        <footer class="container">
-            <div class="row">
-                <nav aria-label="col-12 col-sm-6 col-md-4 col-lg-3 Page navigation example">
-                    <ul class="pagination">
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-
             </div>
+            <div class="carousel-item">
+                <div class="carousel-img" style="background-image: url('assets/image/cover 3.png');">
+                    <div class="carousel-caption">
+                        <h1 class="display-4 font-weight-bold">HERBTIME BLOG</h5>
+                            <p class="lead">บทความต่างๆเกี่ยวกับกัญชา</p>
+                    </div>
+                    <div class="blackscreen"></div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-img" style="background-image: url('assets/image/cover 4.png');">
+                    <div class="carousel-caption">
+                        <h1 class="display-4 font-weight-bold">HERBTIME STRAINS</h5>
+                            <p class="lead">สายพันธุ์​ต่างๆของกัญชา</p>
+                    </div>
+                    <div class="blackscreen"></div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 
-        </footer>
+    <!-- Jumbotron Heading Index -->
+    <div class="jumbotron jumbotron-fluid text-center">
+        <div class="container text-light">
+            <h1 class="display-4 underline-short">Herbtime Announcement!</h1>
+            <p class="lead">เว็บไซต์นี้ไม่ขายสิ่งเสพติด หรือ ของผิดกฎหมายทุกชนิด
+                เป็นเพียงเว็บบทความสำหรับให้ความรู้เกี่ยวกับกัญชา</p>
+        </div>
+    </div>
 
-    </article>
-
-
-    <footer class="container-fluid bg-light p-4 text-secondary">
+    <!-- Page footer nav Page footer nav Page footer nav Page footer nav Page footer nav Page footer nav -->
+    <footer class="container-fluid bg-alpha p-4 text-light">
         <div class="row">
             <section class="col-12 col-md-4 col-lg-3 col-sm-6 text-center">
                 <a class="navbar-brand" href="index.html">
-                    <img src="https://i.imgur.com/prKxDMe.png" width="150" height="30" class="d-inline-block align-top"
+                    <img src="assets/image/logo white copy.png" width="150" height="30" class="d-inline-block align-top"
                         alt="" loading="lazy">
                 </a>
                 <hr>
                 <p>เว็บไซต์นี้ไม่ขายสิ่งเสพติด หรือ ของผิดกฎหมายทุกชนิด</p>
             </section>
             <section class="col-12 col-md-4 col-lg-3 col-sm-6 text-center">
-                <h3>หัวข้อ</h3>
+                <h3>Blog</h3>
                 <p>
-                    <a class="" href="news.html">ข่าว</a>
+                    <a class="" href="news.html">News</a>
                 </p>
                 <p>
-                    <a href="blog.html">บทความ</a>
+                    <a href="blog.html">Blog</a>
                 </p>
                 <p>
-                    <a href="strains.html">สายพันธุ์​ต่างๆ</a>
+                    <a href="strains.html">Strains</a>
                 </p>
 
             </section>
             <section class="col-12 col-md-4 col-lg-3 col-sm-6 text-center">
-                <h3>เกี่ยวกับฉัน</h3>
+                <h3>About</h3>
                 <p>
-                    <a href="aboutme.html" target="_blank">เกี่ยวกับฉัน</a>
+                    <a href="aboutme.html" target="_blank">Aboutme</a>
                 </p>
 
             </section>
             <section class="col-12 col-md-4 col-lg-3 col-sm-6 text-center">
                 <h3>
-                    ติดตามฉัน
+                    Follow Us
                 </h3>
                 <p>
-                    <a class="font-weight-bold" href="https://www.fb.com/THAiHERBB" target="_blank">FACEBOOK</a>
+                    <a class="font-weight-bold" href="https://www.fb.com/THAiHERBB" target="_blank">
+                        <i class="fab fa-facebook-square"></i>FACEBOOK</a>
+
                 </p>
                 <p>
-                    <a class="font-weight-bold" href="https://www.instagram.com/herbtime_th/"
-                        target="_blank">INSTAGRAM</a>
+                    <a class="font-weight-bold" href="https://www.instagram.com/herbtime_th/" target="_blank"><i
+                            class="fab fa-instagram"></i>INSTAGRAM</a>
                 </p>
 
             </section>
         </div>
     </footer>
-
+    <footer class="footer">
+        <span> COPYRIGHT © 2021 <a href="https://www.fb.com/THAiHERBB" target="_blank">HERBTIME</a></span>
+        ALL Right Reserved
+    </footer>
 
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>

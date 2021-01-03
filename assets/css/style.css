@@ -1,0 +1,130 @@
+/* Table Of Content */
+/* 
+1.Section Settings
+*/
+/* Section Settings */
+.bg-alpha{
+    background: rgba(0, 0, 0, 0.5);
+}
+html,body{
+    height: 100%;
+}
+
+body {
+    font-family: 'Prompt', sans-serif;
+
+
+}
+.underline-short{
+    position: relative;
+    padding: 20px 0;
+    margin-bottom: 25px;
+}
+.underline-short::after{
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -100px;
+    background: #5f5f5f;
+}
+
+/* Section Carousel */
+
+.carousel,
+.carousel-inner,
+.carousel-item,
+.carousel-inner .active {
+    height: 100%;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-caption {
+    top: 65%;
+}
+
+.blackscreen {
+    background: rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+/* Section Jumbotron */
+
+/* Link colors in footer */
+.container-fluid a {
+    color: black;
+}
+
+
+.breadcrumb {
+    background-color: #f3f1f1da;
+}
+
+/* Img cover */
+.img-cover{
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Title of Card (Strains.html) */
+a h5{
+    color: black;
+}
+
+/* Section Card */
+/* ใช้ปรับภาพให้เท่ากันทุกรูป */
+.wrapper-card-img{
+    position: relative;
+    /* Resolution 16:9 */
+    /* padding-top: 56.25%;  */
+
+    padding-top: 100%;
+    overflow: hidden;
+}
+
+.wrapper-card-img img{
+    position: absolute;
+    top: 0;
+}
+/* Section Footer */
+.semi-footer{
+    background-color: #2b2b2b;
+}
+.semi-footer a,h3{
+    color: #ffffff;
+}
+
+/* Underline */
+.underline-short-footer{
+    position: relative;
+    padding: 15px 0;
+    margin-bottom: 10px;
+}
+.underline-short-footer::after{
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -100px;
+    background: #ffffff;
+}
+
+.footer{
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 0.7rem;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
