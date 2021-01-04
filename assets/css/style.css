@@ -98,8 +98,9 @@ a h5{
 /* Section Footer */
 .semi-footer{
     background-color: #2b2b2b;
+    color: #ffffff;
 }
-.semi-footer a,h3{
+.semi-footer a{
     color: #ffffff;
 }
 
@@ -135,7 +136,7 @@ a h5{
     position: relative;
     display: block;
     padding-top: 400px;
-    padding-bottom: 200px;
+    padding-bottom: 150px;
     color: #ffffff;
 }
 /* .jarallax {
@@ -152,3 +153,18 @@ a h5{
     height: 100%;
     z-index: -1;
 } */
+
+/* Section Timeline */
+.timeline{
+list-style: none;
+position: relative;
+padding: 20px 0 20px;
+}
+
+/* Section Button */
+.btn-group-custom button{
+    width: 100px;
+    margin-bottom: 0.5rem;
+   
+
+}

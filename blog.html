@@ -57,84 +57,40 @@
         </div>
     </nav>
 
-    <!-- Carousel -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="carousel-img" style="background-image: url('assets/image/cover 1.png');">
-                    <!-- <img src="assets/image/cover 1.png" class="d-block w-100" alt="..."> -->
-                    <div class="carousel-caption">
-                        <h1 class="display-4 font-weight-bold">HERBTIME</h1>
-                        <p class="lead">สังคมของคนที่สนใจเกี่ยวกับกัญชา</p>
-                    </div>
-                    <div class="blackscreen"></div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="carousel-img" style="background-image: url('assets/image/cover 2.png');">
-                    <div class="carousel-caption">
-                        <h1 class="display-4 font-weight-bold">HERBTIME NEWS</h5>
-                            <p class="lead">ข่าวสารต่างๆเกี่ยวกับกัญชา</p>
-                    </div>
-                    <div class="blackscreen"></div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="carousel-img" style="background-image: url('assets/image/cover 3.png');">
-                    <div class="carousel-caption">
-                        <h1 class="display-4 font-weight-bold">HERBTIME BLOG</h5>
-                            <p class="lead">บทความต่างๆเกี่ยวกับกัญชา</p>
-                    </div>
-                    <div class="blackscreen"></div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="carousel-img" style="background-image: url('assets/image/cover 4.png');">
-                    <div class="carousel-caption">
-                        <h1 class="display-4 font-weight-bold">HERBTIME STRAINS</h5>
-                            <p class="lead">สายพันธุ์​ต่างๆของกัญชา</p>
-                    </div>
-                    <div class="blackscreen"></div>
-                </div>
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-    <!-- jumbotron jumbotron jumbotron jumbotron jumbotron jumbotron jumbotron jumbotron -->
-    <header class="jumbotron jumbotron-fluid text-center">
+    <!-- Header Parallax -->
+    <header data-jarallax='{"speed": 0.5}' class="jarallax page-title"
+        style="background-image: url(assets/image/cover\ 2.png);">
         <div class="container">
-            <h1 class="display-3 underline-short">HERBTIME BLOG</h1>
-            <p class="lead">บทความต่างๆเกี่ยวกับกัญชา</p>
-            <p>writed by fireball.dev</p>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 font-weight-bold">HERBTIME BLOG</h1>
+                    <p class="lead">สังคมของคนที่สนใจเกี่ยวกับกัญชา</p>
+                </div>
+            </div>
         </div>
     </header>
 
-    <!-- Breadcrumb Breadcrumb Breadcrumb Breadcrumb Breadcrumb Breadcrumb Breadcrumb -->
 
-    <div class="container">
+    <!-- Blog -->
+    <section class="container py-5">
+        <div class="row pb-5">
+            <div class="col-12 text-center">
+                <div class="btn-group-custom">
+                    <button class="btn btn-primary">ทั้งหมด</button>
+                    <button class="btn btn-primary">ข่าว</button>
+                    <button class="btn btn-primary">บทความ</button>
+                    <button class="btn btn-primary">สายพันธุ์​</button>
+                </div>
+            </div>
+        </div>
+        <!-- Breadcrumb Breadcrumb Breadcrumb Breadcrumb Breadcrumb Breadcrumb Breadcrumb -->
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Blog</li>
             </ol>
         </nav>
-    </div>
-    <!-- Container card Container card Container card Container card Container card Container card -->
-    <article class="container">
-
+        <!-- Card Blog -->
         <div class="row">
             <section class="col-12 col-md-4 col-lg-3 col-sm-6">
                 <div class="card mb-4">
@@ -229,8 +185,6 @@
                 </div>
             </section>
         </div>
-
-
         <!-- Page footer nav Page footer nav Page footer nav Page footer nav Page footer nav Page footer nav -->
         <footer class="container">
             <div class="row">
@@ -253,6 +207,16 @@
                 </nav>
             </div>
         </footer>
+    </section>
+
+
+    <!-- Container card Container card Container card Container card Container card Container card -->
+    <article class="container">
+
+
+
+
+
     </article>
     <!-- Breadcrumb Breadcrumb Breadcrumb Breadcrumb Breadcrumb Breadcrumb Breadcrumb -->
     <div class="container">
@@ -321,6 +285,7 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/jarallax/dist/jarallax.min.js"></script>
 
     <!-- Firebase SDK -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
