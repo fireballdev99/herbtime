@@ -9,7 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <title>NEWS | HERBTIME</title>
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <!--Owl Carousel-->
+    <title>Contact | HERBTIME</title>
     <link rel="icon" href="https://i.imgur.com/eJYEUhc.png" type="image/x-icon">
 
 </head>
@@ -37,7 +40,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
-                    <li class="nav-item dropdown active">
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Blog
@@ -49,114 +52,113 @@
                         </div>
                     </li>
 
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- Carousel Carousel  Carousel  Carousel  Carousel  Carousel  Carousel -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="carousel-img" style="background-image: url('assets/image/cover 1.png');">
-                    <!-- <img src="assets/image/cover 1.png" class="d-block w-100" alt="..."> -->
-                    <div class="carousel-caption">
-                        <h1 class="display-4 font-weight-bold">HERBTIME</h1>
-                        <p class="lead">สังคมของคนที่สนใจเกี่ยวกับกัญชา</p>
-                    </div>
-                    <div class="blackscreen"></div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="carousel-img" style="background-image: url('assets/image/cover 2.png');">
-                    <div class="carousel-caption">
-                        <h1 class="display-4 font-weight-bold">HERBTIME NEWS</h5>
-                            <p class="lead">ข่าวสารต่างๆเกี่ยวกับกัญชา</p>
-                    </div>
-                    <div class="blackscreen"></div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="carousel-img" style="background-image: url('assets/image/cover 3.png');">
-                    <div class="carousel-caption">
-                        <h1 class="display-4 font-weight-bold">HERBTIME BLOG</h5>
-                            <p class="lead">บทความต่างๆเกี่ยวกับกัญชา</p>
-                    </div>
-                    <div class="blackscreen"></div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="carousel-img" style="background-image: url('assets/image/cover 4.png');">
-                    <div class="carousel-caption">
-                        <h1 class="display-4 font-weight-bold">HERBTIME STRAINS</h5>
-                            <p class="lead">สายพันธุ์​ต่างๆของกัญชา</p>
-                    </div>
-                    <div class="blackscreen"></div>
-                </div>
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-    <!-- jumbotron jumbotron jumbotron jumbotron jumbotron jumbotron jumbotron jumbotron -->
-    <header class="jumbotron jumbotron-fluid text-center">
-        <div class="container">
-            <h1 class="display-3 underline-short">HERBTIME NEWS</h1>
-            <p class="lead">ข่าวสารต่างๆเกี่ยวกับกัญชา</p>
-            <p>writed by fireball.dev</p>
+
+    <!-- Header Parallax -->
+    <header data-jarallax='{"speed": 0.5}' class="jarallax" style="background-image: url(assets/image/cover\ 2.png);">
+
+        <div class="blog-image">
+            <h1 class="display-4 font-weight-bold">CONTACT HERBTIME</h1>
+            <p class="lead">ติดต่อ HERBTIME</p>
         </div>
     </header>
-    <!-- Breadcrumb Breadcrumb Breadcrumb Breadcrumb Breadcrumb Breadcrumb Breadcrumb -->
-    <div class="container">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item "><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item "><a href="blog.html">Blog</a></li>
-                <li class="breadcrumb-item active" aria-current="page">News</li>
-            </ol>
-        </nav>
-    </div>
-    <!-- Container card Container card Container card Container card Container card Container card -->
-    <article class="container">
-        <div class="row">
-            <div class="jumbotron jumbotron text-center col-12">
-                <h1 class="">Coming Soon....</h1>
 
-                <hr class="my-2">
+    <!-- Container Contact -->
 
-                <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="index.html" role="button">กลับสู่หน้าหลัก</a>
-                </p>
+    <section class="container py-5">
+        <div class="row text-center">
+            <div class="col-12">
+                <h2 class="underline-short">Contact Info</h2>
+            </div>
+            <div class="col-sm-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="fa fa-address-card fa-3x py-2" aria-hidden="true"></i>
+                        <h4 class="card-title">Address</h4>
+                        <p class="card-text">California USA</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="fa fa-phone-square fa-3x py-2" aria-hidden="true"></i>
+                        <h4 class="card-title">Tel.</h4>
+                        <p class="card-text">(800)123-1234</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="fa fa-envelope fa-3x py-2" aria-hidden="true"></i>
+                        <h4 class="card-title">E-mail</h4>
+                        <p class="card-text">contact@herbtime.co</p>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Contact Us</h4>
+                        <form>
+                            <div class="form-row">
+                                <div class="col-md-4 form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" class="form-control" placeholder="Full name" required>
+                                </div>
+
+                                <div class="col-md-4 form-group">
+                                    <label for="tel">Tel.</label>
+                                    <input type="tel" id="tel" class="form-control" placeholder="Tel number" required>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" id="email" class="form-control" placeholder="example@email.com"
+                                        required>
+                                </div>
+
+                                <div class="col-xl-12 col-12 form-group">
+                                    <label for="msg">Contact message</label>
+                                    <textarea id="msg" rows="10" class="form-control"
+                                        placeholder="your text here.."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary d-block mx-auto">Submit</button>
+
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-    </article>
+    </section>
 
-    <!-- Breadcrumb Breadcrumb Breadcrumb Breadcrumb Breadcrumb Breadcrumb Breadcrumb -->
-    <div class="container">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item "><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item "><a href="blog.html">Blog</a></li>
-                <li class="breadcrumb-item active" aria-current="page">News</li>
-            </ol>
-        </nav>
-    </div>
+    <!-- Timeline -->
+    <section class="jarallax position-relative py-5" data-jarallax='{"speed": 0.5}'
+        style="background-image: url(assets/image/cover\ 4.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="assets/image/logo white copy.png" width="400px" class="img-fluid" alt="Herbtime">
+                    <h1 class="display-5 font-weight-bold text-white">Contact Us</h1>
 
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
     <footer class="container-fluid p-4 semi-footer">
         <div class="row">
             <section class="col-12 col-md-4 col-lg-3 col-sm-6 text-center">
@@ -202,6 +204,7 @@
                     <a class="font-weight-bold" href="https://www.instagram.com/herbtime_th/" target="_blank"><i
                             class="fab fa-instagram"></i>INSTAGRAM</a>
                 </p>
+
             </section>
         </div>
     </footer>
@@ -215,13 +218,16 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/jarallax/dist/jarallax.min.js"></script>
+    <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
     <!-- Firebase SDK -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="/__/firebase/8.2.1/firebase-app.js"></script>
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
+     https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="/__/firebase/8.2.1/firebase-analytics.js"></script>
 
     <!-- Initialize Firebase -->

@@ -9,7 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <title>BLOG | HERBTIME</title>
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <!--Owl Carousel-->
+    <title>Blog Detail | HERBTIME</title>
     <link rel="icon" href="https://i.imgur.com/eJYEUhc.png" type="image/x-icon">
 
 </head>
@@ -58,64 +61,67 @@
     </nav>
 
     <!-- Header Parallax -->
-    <header data-jarallax='{"speed": 0.5}' class="jarallax page-title"
-        style="background-image: url(assets/image/cover\ 2.png);">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h1 class="display-4 font-weight-bold">HERBTIME BLOG</h1>
-                    <p class="lead">สังคมของคนที่สนใจเกี่ยวกับกัญชา</p>
-                </div>
-            </div>
+    <header data-jarallax='{"speed": 0.5}' class="jarallax" style="background-image: url(assets/image/cover\ 2.png);">
+
+        <div class="blog-image">
+            <h1 class="display-4 font-weight-bold">HERBTIME BLOG</h1>
+            <p class="lead">สังคมของคนที่สนใจเกี่ยวกับกัญชา</p>
         </div>
     </header>
 
 
     <!-- Blog -->
-    <section class="container py-5">
+    <section class="container blog-content">
         <div class="row pb-5">
             <div class="col-12 text-center">
                 <div class="btn-group-custom">
-                    <a href="blog.html?tag=all">
-                        <button class="btn btn-primary active">ทั้งหมด</button>
-                    </a>
-                    <a href="blog.html?tag=news">
-                        <button class="btn btn-primary">ข่าว</button>
-                    </a>
-                    <a href="blog.html?tag=blog">
-                        <button class="btn btn-primary">บทความ</button>
-                    </a>
-                    <a href="blog.html?tag=strains">
-                        <button class="btn btn-primary">สายพันธุ์​</button>
-                    </a>
+                    <button class="btn btn-primary">ทั้งหมด</button>
+                    <button class="btn btn-primary">ข่าว</button>
+                    <button class="btn btn-primary">บทความ</button>
+                    <button class="btn btn-primary">สายพันธุ์​</button>
                 </div>
             </div>
         </div>
+
+
         <!-- Breadcrumb Breadcrumb Breadcrumb Breadcrumb Breadcrumb Breadcrumb Breadcrumb -->
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                <li class="breadcrumb-item"><a href="index.html">Blog</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Nate Diaz นักกีฬา MMA พูดถึงกัญชา</li>
             </ol>
         </nav>
-        <!-- Card Blog -->
-        <div class="row">
-            <section class="col-12 col-md-4 py-2 col-lg-3 col-sm-6">
-                <div class="card mb-4 h-100">
-                    <a href="blog-detail.html?id=0001" class="wrapper-card-img">
-                        <img src="https://scontent.furt2-1.fna.fbcdn.net/v/t1.0-9/133854021_2931392527092876_768761029476466730_n.png?_nc_cat=101&ccb=2&_nc_sid=730e14&_nc_eui2=AeFypF3RiMIS1dJfwo9PhcJtDXEqzxtuyLMNcSrPG27Is2KAaVKQa8a_b-oUwEbNzOVVKG5JCZcM0LMMMq1WggB3&_nc_ohc=8vHqLVYAlWAAX-eHMZw&_nc_ht=scontent.furt2-1.fna&oh=4d770b7f52626caafd7bea281a9f2ad3&oe=60124912"
-                            class="card-img-top" alt="Nate Diaz">
-                    </a>
-                    <div class="card-body">
-                        <h5 class="card-title">Nate Diaz นักกีฬา MMA พูดถึงกัญชา</h5>
-                        <p class="card-text">"ผมไม่ได้สนับสนุนให้ทุกคน สูบกัญชา
-                            แต่ในฐานะนักกีฬาผมคิดว่านักกีฬาควรลองกัญชา.....</p>
-                        <a href="blog-detail.html?id=0001" class="btn btn-primary">อ่านเพิ่มเติม</a>
-                    </div>
-                </div>
-            </section>
-            <section class="col-12 col-md-4 py-2 col-lg-3 col-sm-6">
-                <div class="card mb-4 h-100">
+
+        <div class="col-12">
+            <div class="col-12">
+                <h1>Nate Diaz นักกีฬา MMA พูดถึงกัญชา</h1>
+                <p class="text-mute">30/12/2020</p>
+                <hr>
+            </div>
+            <img class="col-12 blog-detail-img"
+                src="https://scontent.furt2-1.fna.fbcdn.net/v/t1.0-9/133854021_2931392527092876_768761029476466730_n.png?_nc_cat=101&ccb=2&_nc_sid=730e14&_nc_eui2=AeFypF3RiMIS1dJfwo9PhcJtDXEqzxtuyLMNcSrPG27Is2KAaVKQa8a_b-oUwEbNzOVVKG5JCZcM0LMMMq1WggB3&_nc_ohc=8vHqLVYAlWAAX-eHMZw&_nc_ht=scontent.furt2-1.fna&oh=4d770b7f52626caafd7bea281a9f2ad3&oe=60124912"
+                alt="Nate Diaz">
+
+
+            <p class="py-3"><span style="font-size:18px">&nbsp; &nbsp; &nbsp; &nbsp; ผมไม่ได้สนับสนุนให้ทุกคน สูบกัญชา
+                    แต่ในฐานะนักกีฬาผมคิดว่านักกีฬาควรลองกัญชา ถ้าคุณต้องการอะไรซักอย่างมาช่วยเหลือคุณ
+                    ผมว่ามันดีกว่าการใช้สเตอรอยด์ หรือ สารกระตุ้นด้วยซ้ำไป</span></p>
+        </div>
+        <!-- Breadcrumb Breadcrumb Breadcrumb Breadcrumb Breadcrumb Breadcrumb Breadcrumb -->
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="index.html">Blog</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Nate Diaz นักกีฬา MMA พูดถึงกัญชา</li>
+                </ol>
+            </nav>
+        </div>
+        <!-- Owl Carousel -->
+        <div class="owl-carousel owl-theme">
+            <section class="col-12 p-2">
+                <div class="card h-100">
                     <a href="" class="wrapper-card-img">
                         <img src="https://scontent.furt2-1.fna.fbcdn.net/v/t1.0-9/133705670_2930706873828108_4300398926303947243_n.jpg?_nc_cat=111&ccb=2&_nc_sid=730e14&_nc_eui2=AeFI36pI2LRxr04_xMSySZ4Ckp_w_xNnpTmSn_D_E2elOXNXysRFTL8xazCvLCKmaTTL0mvT-roriljstXRmDFEv&_nc_ohc=troeakQS-bgAX-LMwYr&_nc_ht=scontent.furt2-1.fna&oh=a91f38df0c24893e05c243da3f00e860&oe=60112733"
                             class="card-img-top" alt="Tuthan Khamun">
@@ -128,8 +134,8 @@
                     </div>
                 </div>
             </section>
-            <section class="col-12 col-md-4 py-2 col-lg-3 col-sm-6">
-                <div class="card mb-4 h-100">
+            <section class="col-12 p-2">
+                <div class="card h-100">
                     <a href="" class="wrapper-card-img">
                         <img src="https://scontent.furt2-1.fna.fbcdn.net/v/t1.0-9/131977236_2928344924064303_1071273393811169067_n.jpg?_nc_cat=101&ccb=2&_nc_sid=730e14&_nc_eui2=AeEi1pHbV16eytkbkQTvO2uk_yM9bf4uquL_Iz1t_i6q4gPI4JX0zrtFoLNYqqHLU8-_alVuZrjpWVWBiXTKXF9Q&_nc_ohc=CrzbjUGi5oQAX_YBL04&_nc_ht=scontent.furt2-1.fna&oh=50a8e7ada9de72be00376da8ba2761aa&oe=6010C956"
                             class="card-img-top" alt="Bruce Banner">
@@ -142,8 +148,8 @@
                     </div>
                 </div>
             </section>
-            <section class="col-12 col-md-4 py-2 col-lg-3 col-sm-6">
-                <div class="card mb-4 h-100">
+            <section class="col-12 p-2">
+                <div class="card h-100">
                     <a href="" class="wrapper-card-img">
                         <img src="https://scontent.furt2-1.fna.fbcdn.net/v/t1.0-9/131255757_2918123981753064_1618643090308675064_n.jpg?_nc_cat=106&ccb=2&_nc_sid=730e14&_nc_eui2=AeFEk3QV_H3rf2b08i54K0HFB8J2RxuRfwEHwnZHG5F_ARBfaPcTGveQmVPH1P_OrHv42XOvcHvLYpeMvdyPnPLJ&_nc_ohc=YEHFBWNr6LEAX8__nBr&_nc_ht=scontent.furt2-1.fna&oh=770e57ac1eaab25d245e3b02e9a34b52&oe=601361D1"
                             class="card-img-top" alt="Purplethai ethos">
@@ -156,8 +162,8 @@
                 </div>
             </section>
 
-            <section class="col-12 col-md-4 py-2 col-lg-3 col-sm-6">
-                <div class="card mb-4 h-100">
+            <section class="col-12 p-2">
+                <div class="card h-100">
                     <a href="" class="wrapper-card-img">
                         <img src="https://scontent.furt2-1.fna.fbcdn.net/v/t1.0-9/129247486_2911434945755301_6506521127520907836_n.png?_nc_cat=101&ccb=2&_nc_sid=730e14&_nc_eui2=AeEpC3Ro5UA8SLSgI1uhveXfaXfcKwc1YWtpd9wrBzVhaxazxhJ_1gdmveNfaufeoIm64Ju8OU_60MkZWre6yiix&_nc_ohc=lB4luMisy-kAX8WQXWH&_nc_ht=scontent.furt2-1.fna&oh=af9a1ca8f46745869ddff71f02046f3c&oe=60108757"
                             class="card-img-top" alt="กินพันลำ">
@@ -171,38 +177,16 @@
                 </div>
             </section>
         </div>
-        <!-- Page footer nav Page footer nav Page footer nav Page footer nav Page footer nav Page footer nav -->
-        <footer class="container">
-            <div class="row">
-                <nav aria-label="col-12 col-sm-6 col-md-4 col-lg-3 Page navigation example">
-                    <ul class="pagination">
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </footer>
-        <!-- Breadcrumb Breadcrumb Breadcrumb Breadcrumb Breadcrumb Breadcrumb Breadcrumb -->
-
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Blog</li>
-            </ol>
-        </nav>
-
+        <!-- Facebook Comment -->
+        <div class="col-12">
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous"
+                src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v9.0" nonce="DLOO1gQf"></script>
+            <div class="fb-comments" data-width="100%" data-href="https://herbtime-8efe0.web.app/Nate-Diaz-MMA.html"
+                data-width="" data-numposts="5"></div>
+        </div>
     </section>
+
 
 
 
@@ -243,7 +227,6 @@
                 <h3>
                     Follow Us
                 </h3>
-
                 <p>
                     <a class="font-weight-bold" href="https://www.fb.com/THAiHERBB" target="_blank">
                         <i class="fab fa-facebook-square"></i>FACEBOOK</a>
@@ -268,6 +251,8 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/jarallax/dist/jarallax.min.js"></script>
+    <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
     <!-- Firebase SDK -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
